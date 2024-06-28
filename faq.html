@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FAQ</title>
+	<link rel="stylesheet" href="FAQ.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	
+</head>
+<body>
+<!-- Banner Section start  -->
+<div>
+	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img height="300px" src="img/m5.webp" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>GOLPO KOTHA MUSICAL BAND</h5>
+				<h3>Sariakandi,Bogura.</h3>
+				<div>
+				 <p class="" style="font-size: 30px; font-weight: bold;" id="clock"></p>
+				</div>
+				<p>Music has the ability to convey emotions and evoke specific feelings. Leverage this power to align your music choices with your brand values. If your brand focuses on sustainability and eco-friendliness, consider using music with natural or organic elements.</p>
+			  </div>
+		  </div>
+		  <div class="carousel-item active">
+			<img height="300px" src="img/m8.jpg" class="d-block  w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>GOLPO KOTHA MUSICAL BAND</h5>
+				<h3>Sariakandi,Bogura.</h3>
+				<div>
+				 <p class="" style="font-size: 30px; font-weight: bold;" id="clock"></p>
+				</div>
+				<p>Music has the ability to convey emotions and evoke specific feelings. Leverage this power to align your music choices 
+				 with your brand values. If your brand focuses on sustainability and eco-friendliness, consider using music with natural or
+				  organic elements.</p>
+			  </div>
+		  </div>
+		  <div class="carousel-item">
+			<img height="300px" src="img/m7.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>GOLPO KOTHA MUSICAL BAND</h5>
+				<h3>Sariakandi,Bogura.</h3>
+				<div>
+				 <p class="" style="font-size: 30px; font-weight: bold;" id="clock"></p>
+				</div>
+				<p>Music has the ability to convey emotions and evoke specific feelings. Leverage this power to align your music choices with your brand values. If your brand focuses on sustainability and eco-friendliness, consider using music with natural or organic elements.</p>
+			  </div>
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+ </div>
+<div class="navbr">
+	
+	<a href="index.html" class="active_nav">Home</a>
+		<a href="about.html" >About</a>
+		<a href="contact.html">Contact</a>
+		<a href="FAQ.html">FAQ</a>
+	</div>
+	<hr>
+	<h3 style="color: green; text-align: center;">Frequently Asked Question</h3>
+
+	<button class="collapsible">What types of events do you cater for?</button>
+
+	<div class="content">
+		<p>
+		 We cater for a wide range of events including weddings, corporate events, private parties, birthdays, anniversaries, and more.	
+		</p>
+		
+	</div>
+
+	<button class="collapsible">Can you accommodate dietary restrictions and special requests?</button>
+	<div class="content">
+		<p>
+			Yes, we understand the importance of catering to dietary restrictions and special requests.
+		</p>	
+	</div>
+
+<button class="collapsible">How far in advance should I book your catering services?</button>
+	<div class="content">
+		<p>
+			We recommend booking our catering services as early as possible to ensure availability, especially for large events.
+			<br>Typically, booking at least 2-3 months in advance is advisable,
+			 but we can often accommodate last-minute requests depending on availability.
+		</p>
+	</div>
+
+
+<button class="collapsible">Do you provide staff for the event?</button>
+	<div class="content">
+		<p>
+			Yes, we provide experienced and professional staff including servers, bartenders, chefs,
+			 and event coordinators to ensure your event runs smoothly from start to finish.
+		</p>	
+	</div>
+
+
+<button class="collapsible">Can you assist with event planning and coordination?</button>
+	<div class="content">
+		<p>
+			Absolutely! In addition to catering services, we offer event planning and coordination assistance to help you with every
+			aspect of your event, from venue selection to décor and entertainment.<br>
+            Feel free to adjust these questions and answers to better fit your specific catering service offerings and policies!
+		</p>
+		
+	</div>
+	<footer>
+        <p>GOLPO KOTHA MUSICAL BAND<br>
+          12,june,2024 </p>
+    </footer>
+
+    <script src="script.js"></script>
+	<script src="clock.js"></script>
+	
+</body>
+</html>
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i=0; i < coll.length; i++){
+		coll[i].addEventListener("click", function(){
+			this.classList.toggle("activefaq");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+		
+			}
+		});
+	}
+</script>
